@@ -259,7 +259,7 @@ ${userAnswers.map(ua => `- ${ua.question} 답변: ${ua.answer}`).join('\n')}`;
                     let chatHistory = [];
                     chatHistory.push({ role: "user", parts: [{ text: userPrompt }] });
                     const payload = { contents: chatHistory };
-                    const apiKey = ""
+                    const apiKey = "AIzaSyBHq0-FbSpVcFuOjIpPoXATuM51z006S3Y"
                     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
 
                     // Implement exponential backoff for retries
