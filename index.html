@@ -163,6 +163,12 @@
         </div>
     </div>
 
+    <!-- Footer Section -->
+    <footer class="text-center mt-12 mb-8 text-slate-500 text-sm">
+        <p class="mb-1">&copy; 2025 SHIN MINNCHEOL. All Rights Reserved.</p>
+        <p>Powered by Gemini AI API</p>
+    </footer>
+
     <script>
         // JavaScript for the interactive AI Dementia Self-Check
         document.addEventListener('DOMContentLoaded', () => {
@@ -259,7 +265,7 @@ ${userAnswers.map(ua => `- ${ua.question} 답변: ${ua.answer}`).join('\n')}`;
                     let chatHistory = [];
                     chatHistory.push({ role: "user", parts: [{ text: userPrompt }] });
                     const payload = { contents: chatHistory };
-                    const apiKey = "AIzaSyBHq0-FbSpVcFuOjIpPoXATuM51z006S3Y"
+                    const apiKey = ""
                     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
 
                     // Implement exponential backoff for retries
